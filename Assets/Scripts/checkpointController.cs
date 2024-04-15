@@ -64,8 +64,8 @@ public class checkpointController : MonoBehaviour
                 Debug.Log(log);
                 other.enabled = false;
                 StageStarted = false;
-                FinalTime.text = TimerTxt.text;
-               
+                FinalTime.text = TimerTxt.text; 
+                AudioListener.volume = 0f;
                 FinishScreen.enabled = true;
             }
 

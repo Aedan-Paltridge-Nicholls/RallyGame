@@ -63,9 +63,13 @@
     <Compile Include="Assets\Scripts\checkpointController.cs" />
     <Compile Include="Assets\misc\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
     <Compile Include="Assets\misc\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
+    <Compile Include="Assets\SettingsScripit.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
+    <Compile Include="Assets\Scripts\StartGame.cs" />
     <Compile Include="Assets\Scripts\resume.cs" />
     <Compile Include="Assets\misc\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\FloatVariable.cs" />
+    <Compile Include="Assets\Scripts\EventScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

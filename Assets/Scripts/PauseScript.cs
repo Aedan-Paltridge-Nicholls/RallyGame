@@ -25,11 +25,12 @@ public class PauseScript : MonoBehaviour
         }
     }
 
-    void TogglePause()
+    public  void TogglePause()
     {
 
         bool isPaused = !Time.timeScale.Equals(0f);
         Time.timeScale = isPaused ? 0f : 1f;
+        AudioListener.volume = isPaused ? 0f : 1f;
         PauseMenu.enabled  =  (isPaused) ? true : false;
 
         // Show/hide pause menu UI accordingly
