@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EventScript : MonoBehaviour
-{   
-
+{
+    
+    private void Start()
+    {
+    }
     // Start is called before the first frame update
     public void Reset()
     {
@@ -14,7 +17,10 @@ public class EventScript : MonoBehaviour
     }
     public void LoadMenu()
     {
+        AudioListener.volume = 1.0f;
         SceneManager.LoadScene(0);
+        
+
     }
     public void LoadSettings()
     {
@@ -23,10 +29,9 @@ public class EventScript : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene(1);
+        AudioListener.volume = 1.0f;
+        SceneManager.LoadScene(1);        
         Time.timeScale = 1f;
-
-
     }
     public void CloseGame()
     {

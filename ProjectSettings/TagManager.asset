@@ -8,6 +8,7 @@ TagManager:
   - Start
   - MainUI
   - PauseUI
+  - EventControl
   layers:
   - Default
   - TransparentFX

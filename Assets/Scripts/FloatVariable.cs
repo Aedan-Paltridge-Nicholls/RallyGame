@@ -4,8 +4,12 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Float Variable")]
 public class FloatVariable : ScriptableObject
-{
-    public float Value;
+{ 
+ 
+        public float Value;
+        public float OldValue;
+        public bool enabled;
 
-    
+
+
 }

@@ -359,13 +359,14 @@
 "Assets/misc/PROMETEO - Car Controller/Scripts/CameraFollow.cs"
 "Assets/misc/PROMETEO - Car Controller/Scripts/PrometeoCarController.cs"
 "Assets/misc/PROMETEO - Car Controller/Scripts/PrometeoTouchInput.cs"
+"Assets/Scripts/AddMusic.cs"
 "Assets/Scripts/checkpointController.cs"
 "Assets/Scripts/EventScript.cs"
 "Assets/Scripts/FloatVariable.cs"
 "Assets/Scripts/PauseScript.cs"
 "Assets/Scripts/resume.cs"
+"Assets/Scripts/SettingsScripit.cs"
 "Assets/Scripts/StartGame.cs"
-"Assets/SettingsScripit.cs"
 -langversion:9.0
 
 /deterministic

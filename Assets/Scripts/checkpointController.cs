@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 
 
 public class checkpointController : MonoBehaviour
@@ -12,7 +13,6 @@ public class checkpointController : MonoBehaviour
     [SerializeField] TextMeshProUGUI FinalTime;
     [SerializeField] Canvas FinishScreen;
 
-  
 
     private float StageTime;
     private int HitCheckpoints;
@@ -24,6 +24,8 @@ public class checkpointController : MonoBehaviour
     {
         FinishScreen.enabled = false;
         StageStarted = false;
+        GameObject.Find("Events").GetComponent<PauseScript>().enabled = true;
+
         CheckpointCountText = HitCheckpoints.ToString() + " Of " + CheckpointCount.ToString() ;
         CheckpointCounter.text = CheckpointCountText;
     }
@@ -66,6 +68,7 @@ public class checkpointController : MonoBehaviour
                 StageStarted = false;
                 FinalTime.text = TimerTxt.text; 
                 AudioListener.volume = 0f;
+                GameObject.Find("Events").GetComponent<PauseScript>().enabled = false;
                 FinishScreen.enabled = true;
             }
 
