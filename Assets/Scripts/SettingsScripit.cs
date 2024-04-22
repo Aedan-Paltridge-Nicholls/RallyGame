@@ -44,7 +44,7 @@ public class SettingsScript : MonoBehaviour
     {
         MasterVolume.Value = MasterVol;
         MasterVolume.OldValue = MasterVolume.enabled ? MasterVol : MasterVolume.OldValue;
-        MusicMixer.SetFloat("MasterVolume.", Mathf.Log10(MasterVol) * 20);
+        MusicMixer.SetFloat("MasterVolume", Mathf.Log10(MasterVol) * 20);
     }
     /// <summary>
     /// Sets the Music Volume
