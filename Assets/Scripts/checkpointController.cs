@@ -33,6 +33,12 @@ public class checkpointController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            FinishScreen.enabled = true;
+        }
+        
         if ( StageStarted )
         {
             StageTime += Time.deltaTime;

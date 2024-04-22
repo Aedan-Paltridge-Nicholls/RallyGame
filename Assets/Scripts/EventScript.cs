@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class EventScript : MonoBehaviour
 {
-    
+    public IntegerVariable  Level;
+    public IntegerVariable  LevelTotal;
+   
     private void Start()
     {
+        Level.value = SceneManager.GetActiveScene().buildIndex; 
+        
+        Debug.Log($"Level : {Level.value} ");
     }
     // Start is called before the first frame update
     public void Reset()
@@ -22,15 +27,23 @@ public class EventScript : MonoBehaviour
         
 
     }
-    public void LoadSettings()
+    
+    public void NextLevel()
     {
-        SceneManager.LoadScene(2);
+        //Debug.Log($"currant Level : {Level.value} ");
+
+        Level.value = (Level.value == LevelTotal.value) ? 0 : SceneManager.GetActiveScene().buildIndex + 1;
+      
+       // Debug.Log($"Next Level : {Level.value} ");
+
+        LoadGame();
     }
 
     public void LoadGame()
     {
         AudioListener.volume = 1.0f;
-        SceneManager.LoadScene(1);        
+
+        SceneManager.LoadScene(Level.value);        
         Time.timeScale = 1f;
     }
     public void CloseGame()

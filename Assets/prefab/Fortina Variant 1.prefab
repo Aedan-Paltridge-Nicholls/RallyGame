@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9057774155556765077, guid: 63ba17c2a83eff042bcc59cc6dea1796, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -4333758286579764899, guid: a4388d737c1979d4fba2fc79ce8a5454, type: 3}
+    - target: {fileID: 9057774155556765077, guid: 63ba17c2a83eff042bcc59cc6dea1796, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

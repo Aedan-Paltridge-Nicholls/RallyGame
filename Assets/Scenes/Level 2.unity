@@ -2570,6 +2570,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1486141830}
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EventScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 216529759213008457, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 614600521788947230, guid: 32d14b7ad564e8c4a977abc1c4511e58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2735,6 +2763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06de34b6cfab76549b5c5450662e3f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Level: {fileID: 11400000, guid: c414b4d0975fd5c45b5b45f4adb210f1, type: 2}
+  LevelTotal: {fileID: 11400000, guid: 6161dcd018042a948adcdec907474ead, type: 2}
 --- !u!4 &1486141831
 Transform:
   m_ObjectHideFlags: 0
